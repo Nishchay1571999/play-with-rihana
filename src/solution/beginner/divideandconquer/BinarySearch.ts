@@ -14,6 +14,3 @@ export default function binary_search(haystack: number[], needle: number): boole
     }
     return false
 }
-
-
-binary_search([1, 5, 9, 21, 34, 54, 69, 101, 420, 555, 3000], 69)

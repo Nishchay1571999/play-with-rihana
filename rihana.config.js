@@ -3,7 +3,6 @@ module.exports = {
         "LinearSearch",
         "BinarySearch",
         "BubbleSort",
-        "HeapSort",
         "InsertionSort",
         "SelectionSort",
         "QuickSort",

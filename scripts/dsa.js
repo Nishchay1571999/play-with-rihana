@@ -17,12 +17,6 @@ module.exports = {
         args: "arr: number[]",
         return: "number[]",
     },
-    HeapSort: {
-        type: "fn",
-        fn: "heap_sort",
-        args: "arr: number[]",
-        return: "number[]",
-    },
     InsertionSort: {
         type: "fn",
         fn: "insertion_sort",

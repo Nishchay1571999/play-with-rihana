@@ -6,5 +6,7 @@ module.exports = {
         "HeapSort",
         "InsertionSort",
         "SelectionSort",
+        "QuickSort",
+        "MergeSort",
     ],
 }

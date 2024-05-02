@@ -13,6 +13,10 @@
       ],
       "@advanced/*": [
         "./src/advanced/*"
+      ],
+      "@solution/*": [
+        "./src/solution/beginner/*",
+        "./src/solution/advanced/*"
       ]
     },
     "typeRoots": [

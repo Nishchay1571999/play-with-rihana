@@ -1,9 +1,15 @@
 module.export = {
     clearMocks: true,
+    preset: "ts-jest",
+    testEnvironment: "node",
     moduleNaeMapper: {
         "@code/(.*)": [
-            "<rootDir>/src/advanced/(.*)",
-            "<rootDir>/src/beginner/(.*)"
+            "./src/advanced/(.*)",
+            "./src/beginner/(.*)"
+        ],
+        "@solution/(.*)": [
+            "./src/solution/advanced/(.*)",
+            "./src/solution/beginner/(.*)"
         ]
     },
     preset: "ts-jest"

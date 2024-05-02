@@ -20,7 +20,7 @@ export default function quick_sort(arr: number[], low: number, high: number): nu
 }
 // console.log("================================")
 
-console.log(quick_sort([5, 1, 3, 6, 9, 18, 11, 22], 0, [5, 1, 3, 6, 9, 18, 11, 22].length - 1))
+// console.log(quick_sort([5, 1, 3, 6, 9, 18, 11, 22], 0, [5, 1, 3, 6, 9, 18, 11, 22].length - 1))
 
 
 

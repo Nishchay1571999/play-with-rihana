@@ -1,12 +1,12 @@
-import linear_fn from "../../../src/beginner/LinearSearch"
-import linear_fn_solution from "../../../src/solution/beginner/search/LinearSearch"
+import linear_fn from "../../../src/beginner/LinearSearch";
+import linear_fn_solution from "../../../src/solution/beginner/search/LinearSearch";
 
 const foo = [1, 5, 9, 21, 34, 54, 69, 101, 420, 555, 3000];
-const stageArg = process.argv.filter((x) => x.startsWith('-stage='))[0]
-const stage = stageArg ? stageArg.split('=')[1] : 'solution'
+const stageArg = process.argv.filter((x) => x.startsWith("-stage="))[0];
+const stage = stageArg ? stageArg.split("=")[1] : "solution";
 
 export function test_list() {
-    if (stage === 'solution') {
+    if (stage === "solution") {
         expect(linear_fn_solution(foo, 69)).toEqual(true);
         expect(linear_fn_solution(foo, 22)).toEqual(false);
         expect(linear_fn_solution(foo, 2)).toEqual(false);
@@ -23,6 +23,4 @@ export function test_list() {
     }
 }
 
-
-
-test("Linear Search Test", test_list)
+test("Linear Search Test", test_list);

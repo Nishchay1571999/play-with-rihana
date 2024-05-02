@@ -5,13 +5,15 @@
   "main": "rihana.config.js",
   "scripts": {
     "generate": "node ./scripts/generate.js",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --write ./src && prettier --write ./scripts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jest": "^29.7.0",
+    "prettier": "^3.2.5",
     "typescript": "^5.4.5"
   },
   "devDependencies": {

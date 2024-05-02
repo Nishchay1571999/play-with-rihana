@@ -9,6 +9,7 @@ Here are the Algorithims Suppported:
 5. SelectionSort,
 6. QuickSort,
 7. MergeSort,
+8. Stack
 
 
 ## How to use this module? 

@@ -31,8 +31,13 @@ try {
 
 function generate_method(method) {
     return `${method.name}(${method.args || ""}): ${method.return || "void"} {
-
+        ${method.return ?`return ${default_value(method.return)}`:"\n"}
 }`;
+}
+
+function generate_constructor_params(prop){
+    if(prop.scope == "public")
+    return ` ${prop.name}: ${prop.type}`
 }
 
 function generate_property(prop) {
@@ -44,6 +49,30 @@ function generate_getter(getter) {
     return this.${getter.prop_name};
 }`;
 }
+function default_value(type){
+    if(type.includes("undefined")){
+        return "undefined";
+    }
+    if(type.includes("Array")){
+        return "[]";
+    }
+    if(type.includes("null")){
+        return "null";
+    }
+    switch(type){
+        case "number": return "0"
+        case "boolean": return "false"
+        case "string": return ""
+        default:""
+    }
+}
+
+function generate_initializer(prop) {
+    return `this.${prop.name} = ${default_value(prop.type)}`
+
+}
+
+
 
 function create_class(name, item) {
     fs.writeFileSync(
@@ -53,7 +82,8 @@ function create_class(name, item) {
 
     ${(item.getters || []).map(generate_getter).join("\n    ")}
 
-    constructor() {
+    constructor(${(item.properties || []).map(generate_constructor_params).join(",")}) {
+        ${(item.properties || []).map(generate_initializer).join("\n    ")}
     }
 
     ${(item.methods || []).map(generate_method).join("\n    ")}

@@ -10,8 +10,8 @@ export default function quick_sort(arr: number[], low: number, high: number): nu
         }
         [arr[pivot_index + 1], arr[high]] = [arr[high], arr[pivot_index + 1]];
         pivot_index++;
-        console.log("INDEX", pivot_index)
-        console.log("VALUE", arr[pivot_index])
+        // console.log("INDEX", pivot_index)
+        // console.log("VALUE", arr[pivot_index])
         quick_sort(arr, low, pivot_index - 1);
         quick_sort(arr, pivot_index + 1, high)
     }

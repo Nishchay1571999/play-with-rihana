@@ -44,7 +44,7 @@ module.exports = {
     MergeSort: {
         type: "fn",
         fn: "merge_sort",
-        args: "arr: number[]",
+        args: "arr: number[], low: number, high: number",
         return: "number[]",
     },
 };

@@ -26,3 +26,8 @@ this will generate all the files where you can practice your DSA
 ```
 Its somewhere in the source directory search it there
 ```
+
+
+
+# Focus of this projects : 
+Focus on these nuts :)

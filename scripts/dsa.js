@@ -38,7 +38,7 @@ module.exports = {
     QuickSort: {
         type: "fn",
         fn: "quick_sort",
-        args: "arr: number[]",
+        args: "arr: number[], low: number, high: number",
         return: "number[]",
     },
     MergeSort: {

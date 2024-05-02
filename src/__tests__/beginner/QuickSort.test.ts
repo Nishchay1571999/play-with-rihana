@@ -20,9 +20,9 @@ export function test_list() {
         expect(quick_sort_solution(case2, 0, case2.length - 1)).toEqual(solu2);
         expect(quick_sort_solution(case3, 0, case3.length - 1)).toEqual(solu3);
     } else {
-        expect(quick_sort(case1)).toEqual(solu1);
-        expect(quick_sort(case2)).toEqual(solu2);
-        expect(quick_sort(case3)).toEqual(solu3);
+        expect(quick_sort(case1, 0, case1.length - 1)).toEqual(solu1);
+        expect(quick_sort(case2, 0, case2.length - 1)).toEqual(solu2);
+        expect(quick_sort(case3, 0, case3.length - 1)).toEqual(solu3);
     }
 }
 

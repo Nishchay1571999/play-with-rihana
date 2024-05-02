@@ -3,7 +3,7 @@
 module.exports = {
     BinarySearch: {
         type: "fn",
-        fn: "bs_list",
+        fn: "binary_search",
         args: "haystack: number[], needle: number",
         return: "boolean",
     },

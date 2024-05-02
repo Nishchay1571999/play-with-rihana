@@ -31,3 +31,5 @@ Its somewhere in the source directory search it there
 
 # Focus of this projects : 
 Focus on these nuts :)
+
+### rihana.config.js has all the necessary algos that are currently testable
